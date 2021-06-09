@@ -15,6 +15,7 @@ def solution(nums):
     for i in combinations(nums, 3):
         i = list(i)
         if is_prime_bad(sum(i)):
+            print("{0}를 이용해서 {1}을 만들 수 있습니다.".format(i, sum(i)))
             answer += 1
     return answer
 
@@ -32,4 +33,4 @@ def best_solution(nums):
     return sum([prime_number(sum(c)) for c in combinations(nums, 3)])
 
 
-solution([1, 2, 3, 4])
+solution([1, 2, 3, 4, 6, 5])
