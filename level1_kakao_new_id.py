@@ -12,10 +12,10 @@ def solution(new_id):
                 new_id[i-1] = ''
     new_id = list(filter(None, new_id))
     # new_id = new_id[0]
-    if len(new_id) > 15:
-        new_id = new_id[:15]
     if new_id != [] and new_id[0] == '.':
         del new_id[0]
+    if len(new_id) > 15:
+        new_id = new_id[:15]
     if new_id != [] and new_id[-1] == '.':
         del new_id[-1]
     new_id = ''.join(new_id)
