@@ -30,7 +30,7 @@ def solution(number, hand):
             d_l = abs(N_row-L_row)+abs(N_col-L_col)
             d_r = abs(N_row-R_row)+abs(N_col-R_col)
             if d_r == d_l:
-                if hand =='right':
+                if hand == 'right':
                     a.append('R')
                     right = i
                 else:
