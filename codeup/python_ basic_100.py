@@ -96,3 +96,287 @@ print(int(a) + int(b))
 a = input()
 b = input()
 print(float(a)+float(b))
+
+# 27
+a = int(input())
+print('%x' % a)
+
+# 28
+a = int(input())
+print('%X' % a)
+
+# 29
+a = int(input(), 16)
+print('%o' % a)
+
+# 30
+a = ord(input())
+print(a)
+
+# 31
+c = int(input())
+print(chr(c))
+
+# 32
+c = int(input())
+print(-c)
+
+# 33
+a = ord(input())
+print(chr(a+1))
+
+# 34
+a, b = input().split()
+print(int(a) - int(b))
+
+# 35
+a, b = input().split()
+print(float(a) * float(b))
+
+# 36
+w, n = input().split()
+print(w*int(n))
+
+# 37
+n = input()
+s = input()
+print(int(n)*s)
+
+# 38
+a, b = input().split()
+print(int(a)**int(b))
+
+# 39
+a, b = input().split()
+print(float(a)**float(b))
+
+# 40
+a, b = input().split()
+print(int(a)//int(b))
+
+# 41
+a, b = input().split()
+print(int(a)%int(b))
+
+# 42
+a = float(input())
+print(format(a, ".2f"))
+
+# 43
+a, b = input().split()
+print(format(float(a)/float(b), ".3f"))
+
+# 44
+a, b = input().split()
+print(int(a) + int(b))
+print(int(a) - int(b))
+print(int(a) * int(b))
+print(int(a) // int(b))
+print(int(a) % int(b))
+print(format(int(a) / int(b), '.2f'))
+
+# 45
+a, b, c = input().split()
+d = int(a) + int(b) + int(c)
+print(d, format(d/3, '.2f'))
+
+# 46
+a = input()
+print(int(a) << 1)
+
+# 47
+a, b = input().split()
+print(int(a) << int(b))
+
+# 48
+a, b = input().split()
+print("True") if int(a) < int(b) else print("False")
+
+# 49
+a, b = input().split()
+print("True") if int(a) == int(b) else print("False")
+
+# 50
+a, b = input().split()
+print("True") if int(a) <= int(b) else print("False")
+
+# 51
+a, b = input().split()
+print("True") if int(a) != int(b) else print("False")
+
+# 52
+n = int(input())
+print(bool(n))
+
+# 53
+a = bool(int(input()))
+print(not a)
+
+# 54
+a, b = input().split()
+print(bool(int(a)) and bool(int(b)))
+
+# 55
+a, b = input().split()
+print(bool(int(a)) or bool(int(b)))
+
+# 56
+a, b = input().split()
+a = bool(int(a))
+b = bool(int(b))
+print((a and (not b)) or ((not a) and b))
+
+# 57
+a, b = input().split()
+a = bool(int(a))
+b = bool(int(b))
+print((a and b) or ((not a) and (not b)))
+
+# 58
+a, b = input().split()
+a = bool(int(a))
+b = bool(int(b))
+print(not(a or b))
+
+# 59 비트연산자
+a = int(input())
+print(~a)
+
+# 60
+a, b = input().split()
+print(int(a) & int(b))
+
+# 61
+a, b = input().split()
+print(int(a) | int(b))
+
+# 62
+a, b = input().split()
+print(int(a) ^ int(b))
+
+# 63
+a, b = input().split()
+a = int(a)
+b = int(b)
+print(a if (a >= b) else b)
+
+# 64
+a, b, c = input().split()
+a = int(a)
+b = int(b)
+c = int(c)
+print((a if a < b else b) if ((a if a < b else b) < c) else c)
+
+# 65
+a, b, c = input().split()
+a = int(a)
+b = int(b)
+c = int(c)
+if a % 2 == 0:
+    print(a)
+
+if b % 2 == 0:
+    print(b)
+
+if c % 2 == 0:
+    print(c)
+
+# 66
+a, b, c = input().split()
+a = int(a)
+b = int(b)
+c = int(c)
+if a % 2 == 0:
+    print('even')
+else:
+    print('odd')
+if b % 2 == 0:
+    print('even')
+else:
+    print('odd')
+if c % 2 == 0:
+    print('even')
+else:
+    print('odd')
+
+# 67
+n = int(input())
+if n < 0:
+    if n % 2 == 0:
+        print('A')
+    else:
+        print('B')
+else:
+    if n % 2 == 0:
+        print('C')
+    else:
+        print('D')
+
+# 68
+n = int(input())
+if n >= 90:
+    print('A')
+elif n >= 70:
+    print('B')
+elif n >= 40:
+    print('C')
+else:
+    print('D')
+
+# 69
+a = input()
+if a == 'A':
+    print('best!!!')
+elif a == 'B':
+    print('good!!')
+elif a == 'C':
+    print('run!')
+elif a == 'D':
+    print('slowly~')
+else:
+    print('what?')
+
+# 70
+a = int(input())
+if a//3 == 1:
+    print("spring")
+elif a//3 == 2:
+    print("summer")
+elif a//3 == 3:
+    print("fall")
+else:
+    print("winter")
+
+# 71
+n = 1
+while n != 0:
+    n = int(input())
+    if n != 0:
+        print(n)
+
+# 72
+n = int(input())
+while n != 0:
+    print(n)
+    n -= 1
+
+# 73
+n = int(input())
+while n != 0:
+    n -= 1
+    print(n)
+
+# 74
+c = ord(input())
+t = ord('a')
+while t <= c:
+    print(chr(t), end=' ')
+    t += 1
+
+# 75
+c = int(input())
+t = 0
+while t <= c:
+    print(t)
+    t += 1
+
