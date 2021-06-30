@@ -380,3 +380,91 @@ while t <= c:
     print(t)
     t += 1
 
+# 76
+n = int(input())
+for i in range(n + 1):
+    print(i)
+
+# 77
+n = int(input())
+s = 0
+for i in range(1, n+1):
+    if i % 2 == 0:
+        s += i
+print(s)
+
+# 78
+s = None
+while s != 'q':
+    s = input()
+    print(s)
+
+# 79
+n = int(input())
+i, s = 0, 0
+while s < n:
+    i += 1
+    s += i
+print(i)
+
+# 80
+n, m = input().split()
+for i in range(1, int(n)+1):
+    for j in range(1, int(m)+1):
+        print(i, j)
+
+# 81
+s = int(input(), 16)
+if 9 < s < 17:
+    for i in range(1, 16):
+        print('%X*%X=%X' % (s, i, s*i))
+
+# 82
+s = int(input())
+if s < 30:
+    for i in range(1, s+1):
+        i = str(i)
+        if i.count('3') == 1 or i.count('6') == 1 or i.count('9') == 1:
+            print('X', end=' ')
+        else:
+            print(i, end=' ')
+
+# 83
+r, g, b = input().split()
+r = int(r)
+g = int(g)
+b = int(b)
+c = 0
+for i in range(r):
+    for j in range(g):
+        for k in range(b):
+            print(i, j, k)
+            c += 1
+print(c)
+
+# 84
+h, b, c, s = input().split()
+bit = int(h) * int(b) * int(c) * int(s) / 8 / 1024 / 1024
+print(format(bit, '.1f'), 'MB')
+
+# 85
+w, h, b= input().split()
+bit = int(w) * int(h) * int(b) / 8 / 1024 / 1024
+print(format(bit, '.2f'), 'MB')
+
+# 86
+n = int(input())
+a, b = 0, 0
+while b < n:
+    a += 1
+    b += a
+print(b)
+
+# 87
+n = int(input())
+for i in range(1, n+1):
+    if i % 3 != 0:
+        print(i, end=' ')
+
+# 88
+
