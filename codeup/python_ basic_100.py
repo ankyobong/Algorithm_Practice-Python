@@ -467,4 +467,69 @@ for i in range(1, n+1):
         print(i, end=' ')
 
 # 88
+a, d, n = input().split()
+a = int(a)
+for i in range(1, int(n)):
+    a += int(d)
+print(a)
 
+# 89
+a, d, n = input().split()
+a = int(a)
+for i in range(1, int(n)):
+    a *= int(d)
+print(a)
+
+# 90
+a, m, d, n = input().split()
+a = int(a)
+d = int(d)
+m = int(m)
+for i in range(1, int(n)):
+    a = a * m + d
+print(a)
+
+# 91
+a, b, c = input().split()
+a = int(a)
+b = int(b)
+c = int(c)
+d = 1
+while d % a != 0 or d % b != 0 or d % c != 0:
+    d += 1
+print(d)
+
+# 92
+n = int(input())
+a = input().split()
+for i in range(len(a)):
+    a[i] = int(a[i])
+d = [0 for i in range(23)]
+for i in a:
+    d[i-1] += 1
+for i in d:
+    print(i, end=' ')
+
+# 93
+n = int(input())
+a = input().split()
+for i in range(n-1, -1, -1):
+    print(a[i], end=' ')
+
+# 94
+n = int(input())
+a = input().split()
+for i in range(len(a)):
+    a[i] = int(a[i])
+print(min(a))
+
+# 95
+d = [[0 for j in range(20)] for i in range(20)]
+n = int(input())
+for i in range(n):
+    x, y = input().split()
+    d[int(x)][int(y)] = 1
+for i in range(1, 20):
+    for j in range(1, 20):
+        print(d[i][j], end=' ')
+    print()
