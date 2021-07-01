@@ -571,6 +571,7 @@ for i in range(h):
     for j in range(w):
         print(a[i][j], end=' ')
     print()
+
 # 98
 a = [[0 for z in range(10)] for y in range(10)]
 for i in range(10):
