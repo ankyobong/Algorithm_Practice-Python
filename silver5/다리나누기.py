@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/1251
 word = list(input())
 result = []
 tmp = list()
