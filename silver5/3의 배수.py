@@ -2,14 +2,20 @@
 
 x = input()
 num = 0
-while len(x) > 1:
-    num += 1
-    x = str(sum([int(i) for i in x]))
+while True:
+    if len(x) > 1:
+        num += 1
+        n = 0
+        for i in x:
+            n += int(i)
+        x = str(n)
+    else:
+        if int(x) % 3 == 0:
+            print(num)
+            print('YES')
+        else:
+            print(num)
+            print('NO')
+        break
 
-if x in (0, 3, 6, 9):
-    print(num)
-    print('YES')
-else:
-    print(num)
-    print('NO')
 
