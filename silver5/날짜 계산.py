@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/1476
 e, s, m = 0, 0, 0
 result = 0
 a, b, c = map(int, input().split())
