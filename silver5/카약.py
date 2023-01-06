@@ -8,8 +8,8 @@ for _ in range(r):
     if idx[0].count('.') != (c - 2):
         le[int(idx[1][0])-1] = ((c-5) - idx[0].count('.'))
 
-rank = 1
 d = {}
+rank = 1
 for num in sorted(le):
     if num not in d:
         d[num] = rank
