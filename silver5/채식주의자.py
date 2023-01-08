@@ -11,7 +11,6 @@ if x == 0:
         r_y = 250 - r_x
     else:
         r_x = s/y
-        r_y = 0
 elif y == 0:
     if x < l:
         r_y = s/(250-x)
