@@ -17,3 +17,4 @@ for i in range(n-1, -1, -1):
     if best == best_s[i]:
         print(i+1)
         break
+        
