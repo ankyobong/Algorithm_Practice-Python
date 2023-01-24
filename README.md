@@ -1,3 +1,3 @@
 # Algorithm_Practice-Python
 
-Python!!!
+Python is an easy-to-learn language.
