@@ -15,4 +15,5 @@ while mx != 0:
                 exit(0)
     mx -= 1
 
+
 print(result)
