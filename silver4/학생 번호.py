@@ -1,21 +1,11 @@
 # https://www.acmicpc.net/problem/1235
 s_l = []
-for _ in range(int(input())):
-    s_l.append(input())
 
-k = 3
-check = True
-while check:
-    s = []
-    c = []
-    for i in s_l:
-        if i[-k:] in s:
-            c.append(i)
-            break
-        s.append(i[-k:])
-    if c:
-        k += 1
-        check = True
-    else:
+for _ in range(int(input())):
+    s_l.append(input()[::-1])
+
+for k in range(1, len(s_l[0])+1):
+    temp = [num[:k] for num in s_l]
+    if len(temp) == len(set(temp)):
         print(k)
         break
