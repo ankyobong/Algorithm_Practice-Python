@@ -1,13 +1,10 @@
 # https://www.acmicpc.net/problem/1639
-num = input()
-l_num = len(num)
-if (lambda x: sum(x))(map(int, [*num[:int(l_num / 2)]])) == (lambda x: sum(x))(map(int, [*num[int(l_num / 2):]])):
-    print(l_num)
-else:
-    while l_num != 0:
-        for i in range(len(num)-l_num):
-            if (lambda x: sum(x))(map(int, [*num[i:i+int(l_num/2)]])) == (lambda x: sum(x))(map(int, [*num[i+int(l_num/2):i+int(l_num)]])):
-                print(l_num)
-                exit(0)
-        l_num -= 1
-print(0)
+num = list(map(int, list(input())))
+result = 0
+for i in range(len(num)):
+    for j in range(i+1, len(num), 2):
+        t = num[i:j+1]
+        if sum(t[:len(t)//2]) == sum(t[len(t)//2:]):
+            if result < len(t):
+                result = len(t)
+print(result)
