@@ -6,6 +6,7 @@ for _ in range(n):
     a.append(input())
 for _ in range(m):
     b.append(input())
-result = sorted(set(a).intersection(b))
+# result = sorted(set(a).intersection(b))
+result = sorted(set(a) & set(b))
 print(len(result))
 print(*result, sep='\n')
