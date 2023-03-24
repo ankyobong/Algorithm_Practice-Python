@@ -25,6 +25,7 @@ c = 0
 while True:
     if n == t:
         break
+
     if abs(t-n) >= 10:
         n = push_10(n, t)
         c += 1
