@@ -9,6 +9,7 @@ k_topping = 0
 c_topping = 0
 result = 0
 a = []
+
 for topping in toppings:
     k_topping += topping
     c_topping += topping_cost
