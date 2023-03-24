@@ -1,6 +1,7 @@
 # https://www.acmicpc.net/problem/1244
 n = int(input())
 s_l = [*map(int, input().split())]
+
 for _ in range(int(input())):
     s, num = map(int, (input().split()))
     if s == 1:
@@ -29,6 +30,7 @@ for _ in range(int(input())):
                     s_l[num+i] = 0
                 continue
             break
+
 for no, i in enumerate(s_l):
     if (no+1) % 20 == 0:
         print(i)
