@@ -4,20 +4,17 @@ import sys
 n = int(sys.stdin.readline())
 m = int(sys.stdin.readline())
 numbers = set(map(int, sys.stdin.readline().split()))
-a = sorted(numbers)
-b = sorted(numbers, reverse=True)
+numbers = sorted(numbers)
+start, end = 0, n-1
 result = 0
-while a:
-    for i in b:
-        if a[0] == i:
-            b.remove(i)
-            a.remove(i)
-            break
-        elif a[0] + i >= m:
-            result += 1
-            b.remove(i)
-            a.remove(i)
-            break
-    a.pop(0)
+while start < end:
+    if numbers[start] + numbers[end] == m:
+        result += 1
+        start += 1
+        end -= 1
+    elif numbers[start] + numbers[end] < m:
+        start += 1
+    else:
+        end -= 1
 
 print(result)
