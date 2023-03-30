@@ -1,6 +1,7 @@
 # https://www.acmicpc.net/problem/1057
 n, a, b = map(int, input().split())
 round_v = 0
+
 while True:
     if a == b:
         break
