@@ -30,6 +30,7 @@ while True:
         n = push_10(n, t)
         c += 1
         continue
+
     elif abs(t-n) >= 5:
         n1 = push_10(n, t)
         n2 = push_5(n, t)
@@ -39,6 +40,7 @@ while True:
             n = n2
         c += 1
         continue
+
     else:
         n1 = push_5(n, t)
         n2 = push_1(n, t)
