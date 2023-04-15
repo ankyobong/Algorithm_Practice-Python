@@ -1,6 +1,7 @@
 # https://www.acmicpc.net/problem/1590
 n, t = map(int, input().split())
 result = []
+
 for _ in range(n):
     s, i, c = map(int, input().split())
     li = [s+i*j for j in range(c)]
@@ -16,4 +17,5 @@ for _ in range(n):
         else:
             ss = m+1
     result.append(li[a]-t)
+
 print(min(result) if result else -1)
