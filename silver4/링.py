@@ -1,11 +1,14 @@
 # https://www.acmicpc.net/problem/3036
+def gcd(a, b):
+    if b == 0:
+        return a
+    return gcd(b, a % b)
+
+
 n = int(input())
 
-ring = [*map(int, input().split())]
+rings = [*map(int, input().split())]
 
-for i in ring[1:]:
-    t = abs(ring[0] - i)
-    if t == 0 or i//t == 0:
-        print(f'{ring[0]//i}/1')
-    else:
-        print(f'{ring[0]//t}/{i//t}')
+for i in range(1, n):
+    t = gcd(rings[0], rings[i])
+    print(f'{rings[0] // t}/{rings[i] // t}')
