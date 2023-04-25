@@ -1,5 +1,5 @@
 def solution(s):
-    minComp = len(s)    # 압축된 최소 길이 비교 변수
+    mincomp = len(s)    # 압축된 최소 길이 비교 변수
     for i in range(1, len(s)//2+1):  # 1개부터 원래 문자열의 절반길이만큼
         comp = ''
         cnt = 0
@@ -14,9 +14,9 @@ def solution(s):
                     comp += piece
                 piece = s[j:j+i]
                 cnt = 0
-        if len(comp) < minComp:
-            minComp = len(comp)
-    return minComp
+        if len(comp) < mincomp:
+            mincomp = len(comp)
+    return mincomp
 
 
 print(solution("aabbaccc"))
