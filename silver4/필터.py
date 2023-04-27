@@ -15,7 +15,6 @@ for r in range(R - 3 + 1):
         for i in range(r, r + 3):
             for j in range(c, c + 3):
                 median.append(Filter[i][j])
-
         median.sort()
         J.append(median[4])
 
