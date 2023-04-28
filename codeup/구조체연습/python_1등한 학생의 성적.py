@@ -8,6 +8,7 @@ for _ in range(a):
 data_list = sorted(data_list, key=lambda a: int(a[1]), reverse=True)
 no1 = data_list[0]
 no1_scores.append(no1[0])
+
 for i in range(2, len(data_list[0])):
     data_list = sorted(data_list, key=lambda a: int(a[i]), reverse=True)
     for j, k in enumerate(data_list):
