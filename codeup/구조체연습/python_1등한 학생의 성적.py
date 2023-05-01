@@ -17,4 +17,3 @@ for i in range(2, len(data_list[0])):
             break
 
 print(' '.join(no1_scores))
-
