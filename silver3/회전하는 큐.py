@@ -1,11 +1,11 @@
 # https://www.acmicpc.net/problem/1021
 from collections import deque
 
-n, m = map(int, input().split())    
+n, m = map(int, input().split())
 position = list(map(int, input().split()))
 dq = deque([i for i in range(1, n+1)])
-
 count = 0
+
 for i in position:
     while True:
         if dq[0] == i:
