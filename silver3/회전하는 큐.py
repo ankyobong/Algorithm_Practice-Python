@@ -20,4 +20,5 @@ for i in position:
                 while dq[0] != i:
                     dq.appendleft(dq.pop())
                     count += 1
+
 print(count)
