@@ -14,5 +14,6 @@ def fibonacci(num):
 
 T = int(input())
 
+
 for _ in range(T):
     fibonacci(int(input()))
