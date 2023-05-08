@@ -6,6 +6,7 @@ t, x, m = map(int, sys.stdin.readline().strip().split())
 if m == 0:
     print(t * x)
     exit()
+    
 d, s = map(int, sys.stdin.readline().strip().split())
 min_x = (d-1)//s
 
