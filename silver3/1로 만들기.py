@@ -1,6 +1,7 @@
 # https://www.acmicpc.net/problem/1463
 n = int(input())
 x = [0]*(n+1)
+
 for i in range(2, n+1):
     x[i] = x[i-1] + 1
     if i % 2 == 0:
