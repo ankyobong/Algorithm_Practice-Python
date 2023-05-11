@@ -1,8 +1,8 @@
 # https://www.acmicpc.net/problem/1049
-
 n, m = map(int, input().split())
 p, s = [], []
 result = 0
+
 for _ in range(m):
     p_t, s_t = map(int, input().split())
     p.append(p_t)
