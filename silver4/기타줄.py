@@ -10,6 +10,7 @@ for _ in range(m):
 
 m_p = min(p)
 m_s = min(s)
+
 if m_p < m_s * 6:
     result += (n // 6) * m_p
     if (n % 6) * m_s < m_p:
