@@ -1,13 +1,20 @@
 # https://www.acmicpc.net/problem/1072
 x, y = map(int, input().split())
-z = y/x*100
-zn = y/x*100
-n = 0
-while int(z) == int(zn):
-    n += 1
-    if zn == (y+n) / (x+n) * 100:
-        n = -1
-        break
-    zn = (y+n) / (x+n) * 100
+z = (y*100)//x
 
-print(n)
+if z >= 99:
+    print(-1)
+else:
+    result = 0
+    left = 1
+    right = x
+
+    while left <= right:
+        mid = (left + right) // 2
+        if (y+mid)*100//(x+mid) <= z:
+            left = mid+1
+        else:
+            result = mid
+            right = mid -1
+
+    print(result)
