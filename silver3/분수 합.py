@@ -1,5 +1,6 @@
 # https://www.acmicpc.net/problem/1735
 import fractions
+
 a, b = map(int, input().split())
 c, d = map(int, input().split())
 
