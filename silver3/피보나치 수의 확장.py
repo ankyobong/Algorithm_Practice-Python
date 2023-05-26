@@ -1,30 +1,15 @@
 # https://www.acmicpc.net/problem/1788
 n = int(input())
+s = [0, 1]
 
-
-def fib(n):
-    if n == 0:
-        return 0
-    elif n == 1 or n == 2:
-        return 1
-    else:
-        return fib(n - 1) + fib(n - 2)
-
-
-def min_fib(n):
-    if n == 0:
-        return 0
-    elif n == 1 or n == 2:
-        return 1
-    else:
-        return min_fib(n + 1) - min_fib(n + 2)
-
-
-if n > 0:
-    print(1)
-    print(abs(fib(n)))
+if n % 2 == 0 and n < 0:
+    print(-1)
 elif n == 0:
     print(0)
 else:
-    print(-1)
-    print(abs(fib(abs(n))))
+    print(1)
+
+for i in range(2, abs(n) + 1):
+    s.append((s[i - 1] + s[i - 2]) % 1000000000)
+
+print(s[abs(n)])
