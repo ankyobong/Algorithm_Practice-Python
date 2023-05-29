@@ -2,12 +2,24 @@
 alp = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 n = int(input())
 q = input()
-nums = [int(input()) for i in range(n)]
-cal = ''
-result = 0
+numbers = []
+for i in range(n):
+    numbers.append(int(input()))
+result = []
 
 for i in q:
     if i.isalpha():
-        nums[alp.index(i)]
+        result.append(numbers[alp.index(i)])
+    else:
+        b = result.pop()
+        a = result.pop()
+        if i == '+':
+            result.append(a+b)
+        elif i == '-':
+            result.append(a-b)
+        elif i == '*':
+            result.append(a*b)
+        elif i == '/':
+            result.append(a/b)
 
-print('{:.2f}'.format(round(result, 2)))
+print('{:.2f}'.format(round(result[0], 2)))
