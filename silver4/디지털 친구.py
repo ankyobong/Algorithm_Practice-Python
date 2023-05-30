@@ -12,6 +12,7 @@ def check_almost_friend(x, y):
         if len(a) == 1 and len(b) == 1:
             if check_friend(x, y[:i] + y[i+2:] + a + b):
                 return True
+
         a, b = str(int(y[i]) - 1), str(int(y[i + 1]) + 1)
         if len(a) == 1 and len(b) == 1:
             if check_friend(x, y[:i] + y[i+2:] + a + b):
