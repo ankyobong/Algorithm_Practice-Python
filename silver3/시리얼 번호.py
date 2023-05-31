@@ -3,6 +3,7 @@ import re
 
 n = int(input())
 d = dict()
+
 for _ in range(n):
     inp = input()
     if len(inp) in d:
