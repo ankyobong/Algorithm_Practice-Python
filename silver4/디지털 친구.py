@@ -23,6 +23,7 @@ def check_almost_friend(x, y):
 
 for _ in range(3):
     x, y = sys.stdin.readline().split()
+
     if check_friend(x, y):
         print("friends")
     elif check_almost_friend(x, y) or check_almost_friend(y, x):
