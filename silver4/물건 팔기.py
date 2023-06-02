@@ -7,6 +7,7 @@ for _ in range(n):
         sold[a] = [b]
     else:
         sold[a].append(b)
+
 result = 0
 top = 0
 for i in sorted(list(sold.keys())):
