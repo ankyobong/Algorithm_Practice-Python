@@ -18,7 +18,7 @@ n, m = map(int, input().split())
 floor = list()
 for _ in range(n):
     floor.append(list(input()))
-    
+
 result = 0
 for i in range(n):
     for j in range(m):
