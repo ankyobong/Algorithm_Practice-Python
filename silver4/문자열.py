@@ -9,4 +9,5 @@ for n in range(len(b)-len(a)+1):
             s += 1
     if result > s:
         result = s
+        
 print(result)
