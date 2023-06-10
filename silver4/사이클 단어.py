@@ -3,6 +3,7 @@ n = int(input())
 words = list()
 for _ in range(n):
     words.append(input())
+    
 result = 0
 # 중복제거
 words = list(set(words))
