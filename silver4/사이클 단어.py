@@ -5,8 +5,10 @@ for _ in range(n):
     words.append(input())
     
 result = 0
+
 # 중복제거
 words = list(set(words))
+
 while len(words) != 0:
     word = words[0]
     for i in range(len(word)):
