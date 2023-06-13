@@ -1,5 +1,6 @@
 def solution(s):
     mincomp = len(s)    # 압축된 최소 길이 비교 변수
+    
     for i in range(1, len(s)//2+1):  # 1개부터 원래 문자열의 절반길이만큼
         comp = ''
         cnt = 0
