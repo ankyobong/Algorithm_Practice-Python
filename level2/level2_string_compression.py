@@ -5,7 +5,7 @@ def solution(s):
         comp = ''
         cnt = 0
         piece = s[:i]
-        
+
         for j in range(i, len(s)+i, i):  # i부터 len(i)+i까지 i씩 더하면서
             if s[j:j+i] == piece:   # 일치하는 경우
                 cnt += 1
