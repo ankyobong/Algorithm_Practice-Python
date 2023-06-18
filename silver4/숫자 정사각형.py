@@ -4,6 +4,7 @@ mx = min(n, m)-1
 square = []
 for _ in range(n):
     square.append(input())
+    
 result = 1
 while mx != 0:
     for i in range(n-mx):
