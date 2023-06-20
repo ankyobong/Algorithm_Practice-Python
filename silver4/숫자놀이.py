@@ -8,6 +8,7 @@ for i in range(m, n+1):
     for j in str(i):
         word += a_d[j] + " "
     result[word[:-1]] = i
+
 count = 1
 for i in sorted(result):
     if count == 10:
