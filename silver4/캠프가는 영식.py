@@ -7,6 +7,7 @@ for _ in range(n):
     li = [s+i*j for j in range(c)]
     if li[-1] < t:
         continue
+
     ss, e = 0, c-1
     a = 0
     while ss <= e:
