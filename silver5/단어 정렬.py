@@ -1,6 +1,8 @@
 # https://www.acmicpc.net/problem/1181
 # a = ['but', 'i', 'wont', 'hesitate', 'no', 'more', 'no', 'more', 'it', 'cannot', 'wait', 'im', 'yours']
 import sys
+
+
 a = set()
 for i in range(int(input())):
     a.add(sys.stdin.readline().rstrip())
