@@ -1,6 +1,7 @@
 # https://www.acmicpc.net/problem/3054
 w = input()
 result = ['.', '.', '#', '.', '.']
+
 for n, i in enumerate(w,1):
     s = '#'
     if n % 3 == 0:
