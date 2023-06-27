@@ -20,7 +20,6 @@ def resort(data):
     s_data = sorted(data)
     for k in data:
         output += str(rank(s_data, k)) + ' '
-
     return output
 
 
