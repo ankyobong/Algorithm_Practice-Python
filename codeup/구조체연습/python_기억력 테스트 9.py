@@ -1,6 +1,7 @@
 N, M = map(int, input().split())
 data = {}
 word = []
+
 for _ in range(N):
     name, num = input().split()
     if name in data:
