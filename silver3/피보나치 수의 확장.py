@@ -1,7 +1,6 @@
 # https://www.acmicpc.net/problem/1788
 n = int(input())
 s = [0, 1]
-
 if n % 2 == 0 and n < 0:
     print(-1)
 elif n == 0:
