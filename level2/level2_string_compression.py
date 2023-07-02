@@ -24,4 +24,4 @@ def solution(s):
 
 print(solution("aabbaccc"))
 print(solution("ababcdcdababcdcd"))
-
+print(solution("ababcdcdsafvasbcdcd"))
