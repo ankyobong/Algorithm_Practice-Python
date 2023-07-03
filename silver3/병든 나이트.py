@@ -1,6 +1,5 @@
 # https://www.acmicpc.net/problem/1783
 n, m = map(int, input().split())
-
 if n == 1:
     print(1)
 elif n == 2:
