@@ -8,6 +8,7 @@ while True:
         break
     elif a[-1] != '.':
         continue
+        
     n = re.sub(r'([a-z,A-Z," "])', '', a)
     result = list()
     for i in n:
