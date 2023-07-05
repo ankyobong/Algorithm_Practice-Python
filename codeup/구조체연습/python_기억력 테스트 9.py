@@ -17,4 +17,3 @@ for i in word:
         print(data[i])
     else:
         print(0)
-
