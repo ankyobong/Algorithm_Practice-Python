@@ -29,6 +29,7 @@ while True:
             else:
                 result.append(i)
                 break
+                
     if result:
         print('no')
     else:
