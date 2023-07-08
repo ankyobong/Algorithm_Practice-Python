@@ -12,7 +12,6 @@ def is_prime_num(num: int):
     for i in range(2, int(math.sqrt(num)+1)):
         if arr[i] == True:
             j = 2
-
             while (i * j) <= num:
                 arr[i*j] = False
                 j += 1
