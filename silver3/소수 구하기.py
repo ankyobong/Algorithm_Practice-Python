@@ -20,7 +20,6 @@ def is_prime_num(num: int):
 
 
 result = is_prime_num(n)
-
 for i in range(len(result)-m):
     if result[m+i]:
         print(m+i)
