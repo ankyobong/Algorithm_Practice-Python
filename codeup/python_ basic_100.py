@@ -551,6 +551,7 @@ for i in range(n):
             d[int(x)-1][j] = 1
         else:
             d[int(x)-1][j] = 0
+
 for i in range(19):
     for j in range(19):
         print(d[i][j], end=' ')
