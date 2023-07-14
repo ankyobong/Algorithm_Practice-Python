@@ -2,6 +2,7 @@ toppings = []
 n_topping = int(input())
 dou, topping_cost = map(int, input().split())
 k_dou = int(input())
+
 for i in range(n_topping):
     toppings.append(int(input()))
 toppings.sort(reverse=True)
