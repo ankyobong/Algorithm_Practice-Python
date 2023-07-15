@@ -14,7 +14,6 @@ a = []
 for topping in toppings:
     k_topping += topping
     c_topping += topping_cost
-
     cal = (k_dou+k_topping)/float(dou+c_topping)
     # a.append(cal)
     if result > cal:
