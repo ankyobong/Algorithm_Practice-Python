@@ -22,4 +22,3 @@ for topping in toppings:
         result = cal
 
 print(int(result))
-# print(a)
